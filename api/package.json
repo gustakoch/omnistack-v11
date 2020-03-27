@@ -1,0 +1,25 @@
+{
+  "name": "api-omnistack11",
+  "version": "1.0.0",
+  "description": "API builded on the 11th Omnistack week edition provided by Rocketseat",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon source/server.js"
+  },
+  "keywords": [
+    "api",
+    "nodejs",
+    "rocketseat",
+    "omnistack",
+    "javascript",
+    "back-end"
+  ],
+  "author": "Gustavo Koch",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
