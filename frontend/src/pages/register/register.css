@@ -1,0 +1,56 @@
+.register-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-container .content {
+  width: 100%;
+  padding: 100px;
+  background: #f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.register-container .content section {
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-container .content section h2 {
+  margin: 60px 0 25px;
+  font-size: 25px;
+}
+
+.register-container .content section p {
+  font-size: 18px;
+  color: #999;
+  line-height: 25px;
+}
+
+.register-container .content form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.register-container .content form input {
+  margin-top: 8px;
+}
+
+.register-container .content form .input-group {
+  display: flex;
+}
+
+.register-container .content form .input-group input:nth-child(2) {
+  margin-left: 8px;
+  width: 70px;
+}

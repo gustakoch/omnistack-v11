@@ -1,0 +1,89 @@
+.profile-container {
+  width: 100%;
+  max-width: 1280px;
+  padding: 0 30px;
+  margin: 30px auto;
+  align-items: center;
+}
+
+.profile-container header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-container header img {
+  height: 64px;
+}
+
+.profile-container header span {
+  font-size: 18px;
+  margin-left: 20px;
+}
+
+.profile-container header a {
+  width: 250px;
+  margin-left: auto;
+  margin-top: 0;
+}
+
+.profile-container header button {
+  height: 60px;
+  width: 60px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: transparent;
+  margin-left: 15px;
+  transition: border-color 0.3s;
+}
+
+.profile-container header button:hover {
+  border-color: #999;
+}
+
+.profile-container h2 {
+  margin-top: 60px;
+  margin-bottom: 25px;
+}
+
+.profile-container ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  list-style: none;
+}
+
+.profile-container ul li {
+  background: #fff;
+  padding: 30px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.profile-container ul li button {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  border: 0;
+  background: transparent;
+  transition: opacity 0.3s;
+}
+
+.profile-container ul li button:hover {
+  opacity: 0.7;
+}
+
+.profile-container ul li strong {
+  display: block;
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.profile-container ul li p {
+  line-height: 25px;
+  color: #999;
+}
+
+.profile-container ul li p + strong {
+  margin-top: 30px;
+}

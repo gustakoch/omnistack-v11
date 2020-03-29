@@ -20,6 +20,6 @@ routes.post('/ongs/create', OngController.store)
 
 routes.get('/incidents', IncidentController.index)
 routes.post('/incidents/create', IncidentController.store)
-routes.delete('/incidents/:id', IncidentController.index)
+routes.delete('/incidents/:id', IncidentController.destroy)
 
 module.exports = routes;

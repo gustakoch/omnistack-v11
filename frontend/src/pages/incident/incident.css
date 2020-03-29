@@ -1,0 +1,57 @@
+.incident-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.incident-container .content {
+  width: 100%;
+  padding: 100px;
+  background: #f0f0f5;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.incident-container .content section {
+  width: 100%;
+  max-width: 400px;
+}
+
+.incident-container .content section h2 {
+  margin: 60px 0 25px;
+  font-size: 25px;
+}
+
+.incident-container .content section p {
+  font-size: 18px;
+  color: #999;
+  line-height: 25px;
+}
+
+.incident-container .content form {
+  width: 100%;
+  max-width: 450px;
+}
+
+.incident-container .content form input,
+.incident-container .content form textarea {
+  margin-top: 8px;
+}
+
+.incident-container .content form .input-group {
+  display: flex;
+}
+
+.incident-container .content form .input-group input:nth-child(2) {
+  margin-left: 8px;
+  width: 70px;
+}

@@ -66,9 +66,8 @@ module.exports = {
     })
 
     return response.json({
-      id,
       ok: true,
-      message: 'Caso cadastrado com sucesso'
+      message: 'Caso cadastrado com sucesso!'
     })
   }
 }

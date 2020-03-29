@@ -1,0 +1,24 @@
+.logon-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logon-container section {
+  width: 100%;
+  max-width: 400px;
+}
+
+.logon-container section form {
+  margin-top: 100px;
+}
+
+.logon-container section form h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+}
