@@ -21,19 +21,20 @@ export default function Incidents() {
   }, [])
 
   async function loadIncidents() {
-    if (loading)
+    if (loading) {
       return
+    }
 
-    if (total > 0 && incidents.length === total)
+    if (total > 0 && incidents.length === total) {
       return
+    }
 
     setLoading(true)
-    const response = await api.get('/incidents', {
-      params: { page }
-    })
+    const response = await api.get('/incidents', { params: { page } })
 
     setIncidents([...incidents, ...response.data])
     setTotal(response.headers['x-total-count'])
+    setPage(page + 1)
     setLoading(false)
   }
 
@@ -46,7 +47,7 @@ export default function Incidents() {
       <View style={styles.header}>
         <Image source={logo} />
         <Text style={styles.headerText}>
-          <Text style={{ fontWeight: 'bold' }}>{total}</Text> casos cadastrados
+          Total de <Text style={{ fontWeight: 'bold' }}>{total}</Text> casos
         </Text>
       </View>
 
@@ -57,9 +58,9 @@ export default function Incidents() {
         data={incidents}
         style={styles.incidentList}
         keyExtractor={incident => String(incident.id)}
-        // showsVerticalScrollIndicator={false}
+        showsVerticalScrollIndicator={false}
         onEndReached={loadIncidents}
-        onEndReachedThreshold={0.2}
+        onEndReachedThreshold={0.1}
         renderItem={({ item: incident }) => (
           <View style={styles.incident}>
             <Text style={styles.incidentProp}>ONG</Text>

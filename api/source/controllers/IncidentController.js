@@ -19,6 +19,7 @@ module.exports = {
         'ongs.city',
         'ongs.uf'
       ])
+      .orderBy('incidents.id', 'desc')
 
     response.header('X-Total-Count', count.total)
 

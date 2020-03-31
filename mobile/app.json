@@ -1,12 +1,11 @@
 {
   "expo": {
     "name": "Be The Hero",
-    "slug": "be-the-hero",
+    "slug": "bethehero",
     "privacy": "public",
     "platforms": [
       "ios",
-      "android",
-      "web"
+      "android"
     ],
     "version": "1.0.0",
     "orientation": "portrait",
@@ -23,7 +22,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.home.bethehero"
+    },
+    "android": {
+      "package": "com.home.bethehero",
+      "versionCode": 1
     }
   }
 }
